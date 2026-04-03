@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Reclaim",
+  "version": "1.0.0",
+  "content_scripts": [
+    {
+      "matches": ["https://www.instagram.com/*"],
+      "js": ["remove.js","content.js"],
+      "css":["styles.css"]
+    }
+  ],
+"action": {
+  "default_popup": "popup.html"
+},
+ "permissions": ["scripting","storage"]
+}
